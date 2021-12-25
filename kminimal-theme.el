@@ -5,11 +5,17 @@
 
 (custom-theme-set-faces
  'kminimal
- '(default ((t (:foreground "white" :background "black"))))
+ '(default ((t (:foreground "brightwhite" :background "black"))))
  '(cursor ((t (:inverse-video t))))
- '(region ((t (:foreground "black" :background "white"))))
+ '(region ((t (:foreground "black" :background "brightwhite"))))
+ '(bold-italic ((t (:foreground "brightwhite" :background "black" :underline t))))
 
- '(font-lock-builtin-face ((t (:foreground "white"))))
+ '(mode-line ((t (:foreground "black" :background "brightwhite"))))
+ '(mode-line-inactive ((t (:inherit mode-line))))
+ '(mode-line-buffer-id ((t (:foreground "black"))))
+ ;; '(shadow ((t (:foreground "blue" :background "black"))))
+
+ '(font-lock-builtin-face ((t (:foreground "brightwhite"))))
  '(font-lock-constant-face ((t :foreground "#ff00ff")))
  '(font-lock-preprocessor-face ((t (:inherit font-lock-constant-face))))
  '(font-lock-keyword-face ((t (:foreground "#ffff00"))))
@@ -17,7 +23,7 @@
  '(font-lock-type-face ((t (:inherit font-lock-type-face)))) ;; TODO
  '(font-lock-regexp-grouping-backslash ((t (:foreground "#ffff00"))))
  '(font-lock-regexp-grouping-construct ((t (:foreground "#ffff00"))))
- '(font-lock-variable-name-face ((t (:foreground "white"))))
+ '(font-lock-variable-name-face ((t (:foreground "brightwhite"))))
  '(font-lock-function-name-face ((t (:inherit font-lock-type-face))))
  '(font-lock-string-face ((t (:inherit font-lock-constant-face))))
  '(font-lock-comment-face ((t (:foreground "#00ffff"))))
