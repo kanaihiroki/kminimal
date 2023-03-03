@@ -13,8 +13,8 @@
  '(bold-italic ((t (:underline t))))
 
  ;; '(mode-line ((t (:foreground "black" :background "brightwhite"))))
- ;; '(mode-line-inactive ((t (:inherit mode-line))))
- ;; '(mode-line-buffer-id ((t (:foreground "black"))))
+ '(mode-line-inactive ((t (:inherit mode-line))))
+ '(mode-line-buffer-id ((t (:foreground "black"))))
  ;; '(shadow ((t (:foreground "blue" :background "black"))))
  '(minibuffer-prompt ((t (:foreground "blue" :bold t))))
 
@@ -38,14 +38,20 @@
 
  '(link ((t (:foreground "cyan" :underline t))))
  '(link-visited ((t (:foreground "cyan" :underline t))))
- '(isearch ((t (:foreground "black" :background "yellow"))))
- '(isearch-lazy-highlight-face ((t (:background "yellow"))))
- '(isearch-fail ((t (:background "red"))))
- '(isearch-secondary ((t (:foreground "red"))))
- '(query-replace ((t (:inherit (isearch)))))
 
  '(next-error ((t (:background "yellow"))))
  '(match ((t (:background "yellow"))))
+
+ ;; minibuffer.el
+ '(completions-common-part ((t (:foreground "white" :bold t))))
+
+ ;; isearch.el
+ '(isearch ((t (:inverse-video t))))
+ '(isearch-fail ((t (:background "red"))))
+ '(lazy-highlight ((t (:underline t))))
+
+ ;; misc
+ '(query-replace ((t (:inherit (isearch)))))
  )
 
 (provide-theme 'kminimal)
